@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TSR-Analysis 0.4</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionLoad_CSVs"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionPath_Settings"/>
+   </widget>
+   <widget class="QMenu" name="menuShow">
+    <property name="title">
+     <string>Show</string>
+    </property>
+    <addaction name="actionDifficult_Signs"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuShow"/>
+   <addaction name="menuSettings"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionLoad_CSVs">
+   <property name="text">
+    <string>Load CSVs...</string>
+   </property>
+  </action>
+  <action name="actionPath_Settings">
+   <property name="text">
+    <string>Path Settings...</string>
+   </property>
+  </action>
+  <action name="actionStart">
+   <property name="text">
+    <string>start...</string>
+   </property>
+  </action>
+  <action name="actionMappings">
+   <property name="text">
+    <string>Mappings...</string>
+   </property>
+  </action>
+  <action name="actionDifficult_Signs">
+   <property name="text">
+    <string>difficult Signs</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../resources/signs.qrc"/>
+ </resources>
+ <connections/>
+</ui>
